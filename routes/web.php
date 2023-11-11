@@ -20,3 +20,18 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::prefix('admin')->group(function () {
+Route::get('dashboard', [App\Http\Controllers\Admin\DashboardController::class, 'index']);
+
+
+
+//InfluencerController
+    Route::controller(App\Http\Controllers\Admin\InfluencerController::class)->group(function () {
+        Route::get('/influencer', 'index');
+        Route::get('/influencer/create', 'create');
+        Route::post('/influencer', 'store');
+        Route::get('/influencer/{influencer)/edit', 'edit');
+        Route::put('/influencer/[influencer}', 'update');
+    });
+    });

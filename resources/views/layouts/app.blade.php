@@ -13,7 +13,7 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.bunny.net">
     <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
-
+    @livewireStyles
     <!-- Scripts -->
     {{-- @vite(['resources/sass/app.scss', 'resources/js/app.js']) --}}
 </head>
@@ -81,6 +81,14 @@
             @yield('content')
         </main>
     </div>
+
+
+    {{-- script --}}
+
+   <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}" >
+   <script src="{{ asset('assets/js/jquery-3.7.1.min.js') }}" >
+   </script>
+       @livewireScripts
 </body>
 
 </html>
