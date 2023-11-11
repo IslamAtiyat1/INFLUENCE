@@ -1,11 +1,77 @@
-.hero-bg {
-    background-image: url("../../images/Asset1.png");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-color: aquamarine;
-}
-
 .head {
     background-color: #5d24b2;
+    height: 20px;
+}
+.hero {
+    background-image: url("../../images/img2.png");
+    background-size: cover;
+    background-attachment: scroll;
+    background-color: aquamarine;
+    height: 1300px;
+    z-index: 1;
+}
+
+.hero-img img:first-child {
+    position: relative;
+    width: 50%;
+    bottom: 200px;
+}
+.text-box {
+    z-index: 9;
+    background-color: #5d24b2;
+    color: #fff;
+    font-size: 15pt;
+    width: 25%;
+    /* height: %; */
+    padding: 50px;
+    /* Adjust positioning based on your layout */
+    bottom: 200px;
+    left: 100px;
+    position: relative;
+    border-radius: 50px;
+}
+
+.break {
+    border: 20px solid #5d24b2;
+    line-height: 20px;
+}
+/* .card {
+    left: 1050px;
+    bottom: 1000px;
+} */
+
+.services {
+    background-image: url("../../images/img5.png");
+    background-size: cover;
+    background-attachment: scroll;
+    background-color: aquamarine;
+    height: 1500px;
+}
+.services h2 {
+    background-color: #5d24b2;
+    color: #fff;
+    font-size: 25pt;
+    width: 25%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 50px;
+    top: 200px;
+    left: 100px;
+    position: relative;
+}
+.services ol {
+    color: #fff;
+    font-size: 15pt;
+    width: 35%;
+    padding: 50px;
+    text-align: center;
+    border-radius: 50px;
+    top: 200px;
+    left: 100px;
+    position: relative;
+}
+
+footer {
+    background-color: #000000;
+    height: 130px;
 }
