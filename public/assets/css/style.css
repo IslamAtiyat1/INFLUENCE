@@ -1,0 +1,11 @@
+.hero-bg {
+    background-image: url("../../images/Asset1.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: aquamarine;
+}
+
+.head {
+    background-color: #5d24b2;
+}
