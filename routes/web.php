@@ -19,15 +19,19 @@ Route::get('/', function () {
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Auth::routes();
 
+    Route::controller(App\Http\Controllers\Frontend\InfluencerController::class)->group(function () {
+        Route::get('/home', 'index');
+    });
 
 Route::prefix('admin')->middleware(['auth', 'isAdmin'])->group(function () {
-Route::get('dashboard', [App\Http\Controllers\Admin\DashboardController::class, 'index']);
-//InfluencerController
-    Route::controller(App\Http\Controllers\Admin\InfluencerController::class)->group(function () {
-        Route::get('/influencer', 'index');
-        Route::get('/influencer/create', 'create');
-        Route::post('/influencer', 'store');
-        Route::get('/influencer/{influencer)/edit', 'edit');
-        Route::put('/influencer/[influencer}', 'update');
+    Route::get('dashboard', [App\Http\Controllers\Admin\DashboardController::class, 'index']);
+
+    // InfluencerController
+    Route::prefix('influencer')->group(function () {
+        Route::get('/', [App\Http\Controllers\Admin\InfluencerController::class, 'index']);
+        Route::get('/create', [App\Http\Controllers\Admin\InfluencerController::class, 'create']);
+        Route::post('/', [App\Http\Controllers\Admin\InfluencerController::class, 'store']);
+        Route::get('/{influencer}/edit', [App\Http\Controllers\Admin\InfluencerController::class, 'edit']);
+        Route::put('/{influencer}', [App\Http\Controllers\Admin\InfluencerController::class, 'update']);
     });
-    });
+});

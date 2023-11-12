@@ -62,9 +62,22 @@
         </div>
         <div class="hero-img">
             <img src="{{ asset('images/img3.png') }}" class="d-block w-10" alt="...">
-
-
+        <div class="text">
+            <p> <strong> EAGLES </strong>OF INFLUHUB</p>
         </div>
+        <!-- images-card -->
+            <div class="parent">
+          @foreach ($influencer as $influencer)
+        <div class="div1"> 
+            {{ $influencer->name }}
+            <!-- 'uploads/influencer/' -->
+          <img src="{{ asset("$influencer->image") }}" class="w-100" >
+            
+        </div>
+          @endforeach
+        </div>
+          
+        <!-- end of  images-card -->
         {{-- end hero bage --}}
         {{-- break --}}
         <div class="break">

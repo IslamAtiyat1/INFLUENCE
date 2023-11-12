@@ -15,7 +15,7 @@
     background-size: cover;
     background-attachment: scroll;
     background-color: aquamarine;
-    height: 1300px;
+    height: 1400px;
     z-index: 1;
 }
 
@@ -26,6 +26,71 @@
     width: auto;
     z-index: 3;
 }
+
+.text {
+    color: #5e23b1;
+    position: relative;
+    font-size: 50px;
+    text-align: right;
+    bottom: 570px;
+    right: 20px;
+    font-family: 'Montserrat', sans-serif;
+    /* font-weight: bold; */
+}
+
+.text span {
+    font-weight: 1200px;
+}
+
+.card {
+    position: relative;
+    width: 20%;
+    bottom: 500px;
+    left: 100px;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 11px;
+    grid-row-gap: 5px;
+}
+
+.div1 {
+    grid-area: 2 / 3 / 3 / 4;
+    background-color: #deddde;
+    width: 25%;
+    height: 20px;
+}
+
+.div2 {
+    grid-area: 2 / 4 / 3 / 5;
+    background-color: #deddde;
+}
+
+.div3 {
+    grid-area: 2 / 5 / 3 / 6;
+}
+
+.div4 {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+.div5 {
+    grid-area: 3 / 3 / 4 / 4;
+}
+
+.div6 {
+    grid-area: 3 / 4 / 4 / 5;
+}
+
+.div7 {
+    grid-area: 3 / 5 / 4 / 6;
+}
+
+
+
 
 .topnav {
     overflow: hidden;
