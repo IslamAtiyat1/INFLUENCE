@@ -185,7 +185,7 @@ footer {
     background-color: #5d24b2;
     height: 130px;
     color: white;
-    margin: auto;
+    /* margin: auto; */
     position: relative;
     font-family: 'Montserrat',
         sans-serif;
@@ -194,6 +194,6 @@ footer {
 
 footer p {
 
-    padding: 80px;
-    margin-top: 50px;
+    padding-left: 20px;
+    /* margin-top: 50px; */
 }
