@@ -12,12 +12,12 @@ class Index extends Component
 
     public $influencer_id;
 
-    public function deleteInfluencer($influencer_id)
+    public function deleteinfluencer($influencer_id)
     {
         // dd($influencer_id);
         $this->influencer_id = $influencer_id;
     }
-    public function destroyInfluencer()
+    public function destroyinfluencer()
     {
         $influencer =  Influencer::find($this->influencer_id);
         $path = 'upload/influencer/' . $influencer->image;

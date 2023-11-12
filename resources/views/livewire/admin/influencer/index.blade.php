@@ -86,7 +86,7 @@
 
 @push('script')
     <script>
-        window.addEventListener('close-modal', event => {
+        window.addEventListener('close-model', event => {
             $('#deleteModal').modal('hide');
         });
     </script>

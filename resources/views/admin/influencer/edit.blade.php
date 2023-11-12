@@ -12,7 +12,7 @@
                 </div>
                 <div class="card-body">
                     <div class="row">
-                        <form action="{{ url('admin/influencer/' . $category->id) }}" method="POST"
+                        <form action="{{ url('admin/influencer/'.$influencer->id) }}" method="POST"
                             enctype="multipart/form-data">
                             @csrf
                             @method('PUT')
