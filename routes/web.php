@@ -21,6 +21,9 @@ Auth::routes();
 
     Route::controller(App\Http\Controllers\Frontend\InfluencerController::class)->group(function () {
         Route::get('/home', 'index');
+        Route::get('/Register-Now', 'create');
+        Route::post('/Register-Now','store');
+
     });
 
 Route::prefix('admin')->middleware(['auth', 'isAdmin'])->group(function () {

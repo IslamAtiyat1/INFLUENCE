@@ -10,6 +10,6 @@
                         <div class="p-2"><p>Amman - Dabouq</p></div>
                 </div>
          </div>
-         
+         </div>
         </footer>
         {{-- end-footer --}}

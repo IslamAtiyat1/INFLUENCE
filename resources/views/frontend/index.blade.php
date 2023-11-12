@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
 
     <title>Home Page</title>
 
@@ -36,10 +38,20 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
+    <!-- social media -->
+    <div class="social-media">
+    <div class="d-flex flex-column mb-3">
+    <div class="p-2"><i class='fab fa-instagram' style='font-size:26px'></i></div>
+    <div class="p-2"><i class='fab fa-linkedin-in' style='font-size:24px'></i></div>
+    <div class="p-2"><i class='fab fa-facebook-f' style='font-size:24px;color: #5e23b1'></i></div>
+    <div class="p-2"><i class='fab fa-twitter' style='font-size:24px'></i></div>
+    </div></div>
+    <!--  end social media - -->
     <!-- button -->
     <div class="Register-btn">
         <div class="inner-btn">
-                <span>Register Now <i class='far fa-arrow-alt-circle-right' ></i></span>
+                <button>REGISTER NOW<i class='far fa-arrow-alt-circle-right' ></i></button>
+                <!-- REGISTER NOW -->
         </div>
     </div>
     <!-- end of button -->
@@ -60,23 +72,76 @@
 
             </p>
         </div>
+      
+     <!-- images-card -->
+     <!-- Update your HTML structure -->
+<!-- <div class="parent">
+    <div class="content">
         <div class="hero-img">
             <img src="{{ asset('images/img3.png') }}" class="d-block w-10" alt="...">
-        <div class="text">
+  
+    </div>
+          <div class="text">
             <p> <strong> EAGLES </strong>OF INFLUHUB</p>
         </div>
-        <!-- images-card -->
-            <div class="parent">
-          @foreach ($influencer as $influencer)
-        <div class="div1"> 
-            {{ $influencer->name }}
-            <!-- 'uploads/influencer/' -->
-          <img src="{{ asset("$influencer->image") }}" class="w-100" >
-            
+    <div class="images">
+        @foreach ($influencers as $influencer)
+            <div class="image-card">
+                <div class="card-body">
+                    <h5 class="card-title">{{ $influencer->name }}</h5>
+                    <img src="{{ asset($influencer->image) }}" class="card-img-top" alt="{{ $influencer->name }}">
+              
         </div>
-          @endforeach
+            </div>
+        @endforeach
+    </div>
+</div> -->
+<!-- </div> -->
+
+
+
+
+<!-- arrnge the card design -->
+ 
+<div class="d-flex flex-column mb-3">
+  <div class="p-2">  
+     <div class="hero-img">
+            <img src="{{ asset('images/img3.png') }}" class="d-block w-10" alt="...">
+      </div>
+   </div>
+</div>
+<div class="d-flex flex-column mb-3">
+  <div class="p-2">    
+      <div class="text">
+            <p> <strong> EAGLES </strong>OF INFLUHUB</p>
         </div>
-          
+    </div>
+  <div class="d-flex flex-row mb-3">
+ @foreach ($influencers as $influencer)
+            <div class="image-card">
+                <div class="card-body">
+                   
+                    <img src="{{ asset($influencer->image) }}" class="card-img-top" alt="{{ $influencer->name }}">
+               <h5 class="card-title">{{ $influencer->name }}</h5>
+        </div>
+            </div>
+        @endforeach
+
+  </div>  
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
         <!-- end of  images-card -->
         {{-- end hero bage --}}
         {{-- break --}}

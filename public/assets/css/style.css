@@ -4,7 +4,7 @@
 }
 
 #carouselExample {
-    height: 810px;
+    height: 690px;
     /* background-image: url("../../images/img1.png"); */
     /* background-size: 100% auto; */
     background-color: #deddde;
@@ -15,7 +15,7 @@
     background-size: cover;
     background-attachment: scroll;
     background-color: aquamarine;
-    height: 1400px;
+    height: 1800px;
     z-index: 1;
 }
 
@@ -38,55 +38,72 @@
     /* font-weight: bold; */
 }
 
+.image-card {
+    position: relative;
+    font-size: 50px;
+    text-align: center;
+    bottom: 570px;
+    left: 50%;
+
+}
+
+.image-card img {
+    width: 50%;
+    height: 50%;
+    border-radius: 10%;
+}
+
+.h5 {
+    color: #5d24b2;
+    font-family: 'Montserrat',
+        sans-serif;
+    font-weight: bold;
+}
+
 .text span {
     font-weight: 1200px;
 }
 
-.card {
+.social-media {
+    color: #5e23b1;
     position: relative;
-    width: 20%;
-    bottom: 500px;
-    left: 100px;
+    /* font-size: 50px; */
+    text-align: left;
+    bottom: 80px;
+    left: 70px;
+    /* left: ;: 20px; */
+    font-weight: bolder;
 }
 
 .parent {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 11px;
-    grid-row-gap: 5px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.div1 {
-    grid-area: 2 / 3 / 3 / 4;
-    background-color: #deddde;
-    width: 25%;
-    height: 20px;
+.image-card {
+    flex: 0 0 33.33%;
+    /* Three cards in the first row */
+    max-width: 33.33%;
+    margin: 10px;
+    /* Adjust the margin as needed for spacing */
 }
 
-.div2 {
-    grid-area: 2 / 4 / 3 / 5;
-    background-color: #deddde;
+/* For smaller screens, show two cards in a row */
+@media (max-width: 768px) {
+    .image-card {
+        flex: 0 0 50%;
+        /* Two cards in the first row */
+        max-width: 50%;
+    }
 }
 
-.div3 {
-    grid-area: 2 / 5 / 3 / 6;
-}
-
-.div4 {
-    grid-area: 3 / 2 / 4 / 3;
-}
-
-.div5 {
-    grid-area: 3 / 3 / 4 / 4;
-}
-
-.div6 {
-    grid-area: 3 / 4 / 4 / 5;
-}
-
-.div7 {
-    grid-area: 3 / 5 / 4 / 6;
+/* For even smaller screens, show one card in a row */
+@media (max-width: 576px) {
+    .image-card {
+        flex: 0 0 100%;
+        /* One card in the row */
+        max-width: 100%;
+    }
 }
 
 
@@ -132,7 +149,7 @@
 /* button  */
 .Register-btn {
     position: relative;
-    height: 190px;
+    height: 120px;
     width: 20%;
     margin: 0 auto;
     left: 35%;
@@ -141,39 +158,51 @@
     bottom: 270px;
 }
 
-.Register-btn span {
+/* .Register-btn button {
     text-align: center;
     padding: 10px 30px;
     margin: auto;
     color: #fff;
     font-size: 15pt;
+    height: 70px;
+    border-radius: 20%;
     /* font-family: ; */
-    font-weight: bolder;
-}
+/* font-weight: bolder;
+    background-color: #5d24b2; */
+/* } */
 
-.Register-btn span i {
+.Register-btn button i {
     position: relative;
-    font-size: 10px;
-    color: black;
+    font-size: 30px;
+    color: #5d24b2;
     z-index: 9;
+    /* top: 9px; */
+    left: 5px;
     margin: auto;
+    background-color: #dcd2e7;
+    border-radius: 60%;
 
 }
 
-.img-h {
-    height: 1000px;
-}
-
-.inner-btn {
+.Register-btn button {
     background-color: #5d24b2;
     border-radius: 20px;
     border: 8px solid #dcd2e7;
     text-align: left;
     width: 90%;
     height: 50%;
+    color: #fff;
+    font-size: 15pt;
+    font-weight: bolder;
+    padding-left: 4px;
 
     /* Adjusted to take full height */
 }
+
+.img-h {
+    height: 1000px;
+}
+
 
 .border {
     border-radius: 10px 10px 0px 0px;
@@ -262,3 +291,148 @@ footer p {
     padding-left: 20px;
     /* margin-top: 50px; */
 }
+
+/* register page */
+.login,
+.register {
+    width: 50%
+}
+
+/*Start Login Style*/
+.login {
+    float: left;
+    background-color: #fafafa;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.login h1 {
+    margin-bottom: 40px;
+    font-size: 2.5em;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border: none;
+    background-color: #eeeeef;
+}
+
+input[type="checkbox"] {
+    float: left;
+    margin-right: 5px;
+}
+
+.login span {
+    float: left
+}
+
+.login a {
+    float: right;
+    text-decoration: none;
+    color: #000;
+    transition: 0.3s all ease-in-out;
+}
+
+.login a:hover {
+    color: #9526a9;
+    font-weight: bold
+}
+
+.login button {
+    width: 100%;
+    margin: 30px 0;
+    padding: 10px;
+    border: none;
+    background-color: #9526a9;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+
+.login button:hover {
+    width: 97%;
+    font-size: 22px;
+    border-radius: 5px;
+
+}
+
+.login hr {
+    width: 30%;
+    display: inline-block
+}
+
+.login p {
+    display: inline-block;
+    margin: 0px 10px 30px;
+}
+
+.login ul {
+    list-style: none;
+    margin-bottom: 40px;
+}
+
+.login ul li {
+    display: inline-block;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.login ul li:hover {
+    opacity: 0.6
+}
+
+.login ul li:last-child {
+    margin-right: 0
+}
+
+.login .copyright {
+    display: inline-block;
+    float: none;
+}
+
+/*Start Register Style*/
+.register {
+    float: right;
+    background-image: linear-gradient(135deg, #23212f 5%, #9526a9 95%);
+    height: 100%;
+    color: #fff;
+    border-radius: 0 10px 10px 0;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.register h2 {
+    margin: 30px 0;
+    font-size: 50px;
+    letter-spacing: 3px
+}
+
+.register p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.register button {
+    background-color: transparent;
+    border: 1px solid #FFF;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    transition: 0.2s all ease-in-out;
+}
+
+.register button:hover {
+    color: #9526a9;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+/* end of register page */
