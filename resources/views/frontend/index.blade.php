@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+
     <title>Home Page</title>
 
 </head>
@@ -26,7 +27,7 @@
                 <img src="{{ asset('images/img1.png') }}" class="d-block w-100" alt="...">
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <button class="carousel-control-prev " type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
@@ -35,6 +36,13 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
+    <!-- button -->
+    <div class="Register-btn">
+        <div class="inner-btn">
+                <span>Register Now <i class='far fa-arrow-alt-circle-right' ></i></span>
+        </div>
+    </div>
+    <!-- end of button -->
     {{-- start end --}}
     {{-- break --}}
     <div class="break">

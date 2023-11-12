@@ -2,6 +2,7 @@
     background-color: #5e23b1;
     height: 35px;
 }
+
 .hero {
     background-image: url("../../images/img2.png");
     background-size: cover;
@@ -10,40 +11,94 @@
     height: 1300px;
     z-index: 1;
 }
+
 .container {
-  position: absolute;
-  /* margin: 100px; */
-  left: 50px;
-  width: auto;
-  z-index: 3;
+    position: absolute;
+    /* margin: 100px; */
+    left: 50px;
+    width: auto;
+    z-index: 3;
 }
 
 .topnav {
-  overflow: hidden;
+    overflow: hidden;
 
 }
 
 /* Navbar links */
 .topnav a {
-  float: left;
-  color:  #5e23b1;
-  text-align: center;
-  /* font-family: ; */
-  font-weight: bolder;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+    float: left;
+    color: #5e23b1;
+    text-align: center;
+    /* font-family: ; */
+    font-weight: bolder;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
 }
 
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
+    background-color: #ddd;
+    color: black;
 }
+
+/* nav bar */
+.carousel-control-prev-icon {
+    color: #5d24b2;
+}
+
 .hero-img img:first-child {
     position: relative;
     width: 50%;
     bottom: 200px;
 }
+
+/* button  */
+.Register-btn {
+    position: relative;
+    height: 250px;
+    width: 25%;
+    margin: 0 auto;
+    left: 35%;
+    /* Center the button */
+    text-align: center;
+    bottom: 270px;
+}
+
+.Register-btn span {
+    text-align: center;
+    padding: 10px 30px;
+    margin: auto;
+    color: #fff;
+    font-size: 15pt;
+    /* font-family: ; */
+    font-weight: bolder;
+}
+
+.Register-btn span i {
+    position: relative;
+    font-size: 10px;
+    color: black;
+    z-index: 9;
+    margin: auto;
+
+}
+
+.inner-btn {
+    background-color: #5d24b2;
+    border-radius: 30px;
+    border: 10px solid #dcd2e7;
+    text-align: left;
+    width: 90%;
+    height: 30%;
+
+    /* Adjusted to take full height */
+}
+
+.border {
+    border-radius: 10px 10px 0px 0px;
+}
+
 .text-box {
     z-index: 9;
     background-color: #5d24b2;
@@ -63,6 +118,7 @@
     border: 20px solid #5d24b2;
     line-height: 20px;
 }
+
 /* .card {
     left: 1050px;
     bottom: 1000px;
@@ -70,11 +126,14 @@
 
 .services {
     background-image: url("../../images/img5.png");
-    background-size: contain;
+    background-size: auto;
     background-attachment: scroll;
-    background-color: aquamarine;
+    background-color: rgb(255, 255, 255);
+    background-repeat: no-repeat;
     height: 1500px;
+    width: 100%;
 }
+
 .services h2 {
     background-color: #5d24b2;
     color: #fff;
@@ -87,6 +146,7 @@
     left: 100px;
     position: relative;
 }
+
 .services ol {
     color: #fff;
     font-size: 15pt;

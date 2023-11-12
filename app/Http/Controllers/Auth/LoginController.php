@@ -26,13 +26,23 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = RouteServiceProvider::HOME;
-
+    // protected $redirectTo = RouteServiceProvider::HOME;
+    protected function authenticated()
+    {
+        if (Auth::user()->role_as == '1'){
+            return Redirect('admin/dashboard')->with('message','welcome to dashboard');
+        }
+        else{
+            return redirect('/home')->with('status','logged in successfully');
+        }
+    }
     /**
      * Create a new controller instance.
      *
      * @return void
      */
+
+     
     public function __construct()
     {
         $this->middleware('guest')->except('logout');
