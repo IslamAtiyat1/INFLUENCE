@@ -20,14 +20,14 @@
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label>email</label>
-                                <input type="email" name="slug" class="form-control" />
+                                <input type="email" name="email" class="form-control" />
                                 @error('email')
                                     <small class="text-danger">{{ $message }}</small>
                                 @enderror
                             </div>
                                   <div class="col-md-6 mb-3">
                                 <label>phone</label>
-                                <input type="number" name="slug" class="form-control" />
+                                <input type="number" name="phone" class="form-control" />
                                 @error('phone')
                                     <small class="text-danger">{{ $message }}</small>
                                 @enderror

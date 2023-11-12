@@ -23,9 +23,6 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::prefix('admin')->group(function () {
 Route::get('dashboard', [App\Http\Controllers\Admin\DashboardController::class, 'index']);
-
-
-
 //InfluencerController
     Route::controller(App\Http\Controllers\Admin\InfluencerController::class)->group(function () {
         Route::get('/influencer', 'index');

@@ -11,7 +11,7 @@ class InfluencerFormRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return false;
+        return true;
     }
 
     /**
@@ -33,7 +33,8 @@ class InfluencerFormRequest extends FormRequest
             ],
             'phone' => [
                 'required',
-                'number'
+                'numeric'
+                  
             ],
             'description' => [
                 'required',
