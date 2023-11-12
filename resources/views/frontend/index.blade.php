@@ -18,13 +18,13 @@
      <div id="carouselExample" class="carousel slide">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="{{ asset('images/img1.png') }}" class="d-block w-100" alt="...">
+                <img src="{{ asset('images/img1.png') }}" class="d-block w-100 img-h" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="{{ asset('images/img1.png') }}" class="d-block w-100" alt="...">
+                <img src="{{ asset('images/img1.png') }}" class="d-block w-100 img-h" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="{{ asset('images/img1.png') }}" class="d-block w-100" alt="...">
+                <img src="{{ asset('images/img1.png') }}" class="d-block w-100 img-h" alt="...">
             </div>
         </div>
         <button class="carousel-control-prev " type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -62,13 +62,7 @@
         </div>
         <div class="hero-img">
             <img src="{{ asset('images/img3.png') }}" class="d-block w-10" alt="...">
-            <div class="card" style="width: 18rem;">
-                <img src="{{ asset('images/img4.png') }}" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                </div>
-            </div>
+
 
         </div>
         {{-- end hero bage --}}
@@ -101,8 +95,6 @@
 
 
         {{-- end of services --}}
-
-
 
 
     @endsection

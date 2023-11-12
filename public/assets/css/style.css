@@ -3,6 +3,13 @@
     height: 35px;
 }
 
+#carouselExample {
+    height: 810px;
+    /* background-image: url("../../images/img1.png"); */
+    /* background-size: 100% auto; */
+    background-color: #deddde;
+}
+
 .hero {
     background-image: url("../../images/img2.png");
     background-size: cover;
@@ -12,7 +19,7 @@
     z-index: 1;
 }
 
-.container {
+.head-container {
     position: absolute;
     /* margin: 100px; */
     left: 50px;
@@ -23,6 +30,10 @@
 .topnav {
     overflow: hidden;
 
+}
+
+.navbar-nav {
+    color: #5d24b2;
 }
 
 /* Navbar links */
@@ -56,8 +67,8 @@
 /* button  */
 .Register-btn {
     position: relative;
-    height: 250px;
-    width: 25%;
+    height: 190px;
+    width: 20%;
     margin: 0 auto;
     left: 35%;
     /* Center the button */
@@ -84,13 +95,17 @@
 
 }
 
+.img-h {
+    height: 1000px;
+}
+
 .inner-btn {
     background-color: #5d24b2;
-    border-radius: 30px;
-    border: 10px solid #dcd2e7;
+    border-radius: 20px;
+    border: 8px solid #dcd2e7;
     text-align: left;
     width: 90%;
-    height: 30%;
+    height: 50%;
 
     /* Adjusted to take full height */
 }
@@ -126,12 +141,15 @@
 
 .services {
     background-image: url("../../images/img5.png");
-    background-size: auto;
+    background-size: contain;
+    background-position: 0px 0px;
     background-attachment: scroll;
     background-color: rgb(255, 255, 255);
     background-repeat: no-repeat;
-    height: 1500px;
+    height: 1000px;
     width: 100%;
+    font-family: 'Montserrat',
+        sans-serif;
 }
 
 .services h2 {
@@ -145,10 +163,12 @@
     top: 200px;
     left: 100px;
     position: relative;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 .services ol {
-    color: #fff;
+    color: #5d24b2;
     font-size: 15pt;
     width: 35%;
     padding: 50px;
@@ -157,9 +177,23 @@
     top: 200px;
     left: 100px;
     position: relative;
+    font-family: 'Montserrat',
+        sans-serif;
 }
 
 footer {
-    background-color: #000000;
+    background-color: #5d24b2;
     height: 130px;
+    color: white;
+    margin: auto;
+    position: relative;
+    font-family: 'Montserrat',
+        sans-serif;
+
+}
+
+footer p {
+
+    padding: 80px;
+    margin-top: 50px;
 }
