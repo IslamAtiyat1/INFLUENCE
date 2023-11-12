@@ -14,7 +14,7 @@
 @section('content')
 
     {{-- start slides --}}
-    <div id="carouselExample" class="carousel slide">
+     <div id="carouselExample" class="carousel slide">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="{{ asset('images/img1.png') }}" class="d-block w-100" alt="...">
@@ -35,7 +35,6 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-
     {{-- start end --}}
     {{-- break --}}
     <div class="break">

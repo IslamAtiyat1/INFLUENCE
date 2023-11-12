@@ -1,6 +1,6 @@
 .head {
-    background-color: #5d24b2;
-    height: 20px;
+    background-color: #5e23b1;
+    height: 35px;
 }
 .hero {
     background-image: url("../../images/img2.png");
@@ -10,7 +10,35 @@
     height: 1300px;
     z-index: 1;
 }
+.container {
+  position: absolute;
+  /* margin: 100px; */
+  left: 50px;
+  width: auto;
+  z-index: 3;
+}
 
+.topnav {
+  overflow: hidden;
+
+}
+
+/* Navbar links */
+.topnav a {
+  float: left;
+  color:  #5e23b1;
+  text-align: center;
+  /* font-family: ; */
+  font-weight: bolder;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
 .hero-img img:first-child {
     position: relative;
     width: 50%;
